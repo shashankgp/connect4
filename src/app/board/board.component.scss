@@ -1,0 +1,634 @@
+$blue: blue;
+$red: red;
+$default: white;
+
+.board {
+  cursor: no-drop;
+  background: url("src/assets/images/a.jpg");
+  background-color: transparent;
+  height: 480px;
+  width: 600px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border: 2px solid white;
+}
+.splayer {
+  position: absolute;
+  top: 190px;
+  left: 50px;
+}
+#a1 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 7%;
+  left: 13%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#a2 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  top: 7%;
+  left: 23%;
+  position: absolute;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#a3 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 7%;
+  left: 33%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#a4 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 7%;
+  left: 43%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#a5 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 7%;
+  left: 53%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#a6 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 7%;
+  left: 63%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#a7 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 7%;
+  left: 73%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+
+#b1 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 21%;
+  left: 13%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#b2 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 21%;
+  left: 23%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#b3 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 21%;
+  left: 33%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#b4 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 21%;
+  left: 43%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#b5 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 21%;
+  left: 53%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#b6 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 21%;
+  left: 63%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#b7 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 21%;
+  left: 73%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+
+#c1 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 35%;
+  left: 13%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#c2 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  top: 35%;
+  left: 23%;
+  position: absolute;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#c3 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 35%;
+  left: 33%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#c4 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 35%;
+  left: 43%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#c5 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 35%;
+  left: 53%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#c6 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 35%;
+  left: 63%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#c7 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 35%;
+  left: 73%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+
+#d1 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 49%;
+  left: 13%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#d2 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 49%;
+  left: 23%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#d3 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 49%;
+  left: 33%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#d4 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 49%;
+  left: 43%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#d5 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 49%;
+  left: 53%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#d6 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 49%;
+  left: 63%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#d7 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 49%;
+  left: 73%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+
+#e1 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 63%;
+  left: 13%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#e2 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  top: 63%;
+  left: 23%;
+  position: absolute;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#e3 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 63%;
+  left: 33%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#e4 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 63%;
+  left: 43%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#e5 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 63%;
+  left: 53%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#e6 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 63%;
+  left: 63%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#e7 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 63%;
+  left: 73%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+
+#f1 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 77%;
+  left: 13%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#f2 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 77%;
+  left: 23%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#f3 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 77%;
+  left: 33%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#f4 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 77%;
+  left: 43%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#f5 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 77%;
+  left: 53%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#f6 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 77%;
+  left: 63%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+#f7 {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 77%;
+  left: 73%;
+  border: 1px solid violet;
+  padding: 4px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  opacity: 0.8;
+}
+
+.column {
+  width: 56px;
+  padding: 3px;
+  float: left;
+}
+
+.redclass {
+  background-color: $red;
+}
+
+.blueclass {
+  background-color: $blue;
+}
+
+.defaultclass {
+  background-color: $default;
+}
