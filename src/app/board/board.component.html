@@ -1,49 +1,80 @@
+<div style="color: white;">{{ turn }}</div>
 <div class="board">
-  <div id="a1" (click)="fillcolora1()" class="defaultclass"></div>
-  <div id="a2" (click)="fillcolora2()" class="defaultclass"></div>
-  <div id="a3" (click)="fillcolora3()" class="defaultclass"></div>
-  <div id="a4" (click)="fillcolora4()" class="defaultclass"></div>
-  <div id="a5" (click)="fillcolora5()" class="defaultclass"></div>
-  <div id="a6" (click)="fillcolora6()" class="defaultclass"></div>
-  <div id="a7" (click)="fillcolo7a()" class="defaultclass"></div>
+  <div class="defaultcontainer" id="arrowcontainer">
+    <div id="fillcol1" class="arrowdefaultclass" (click)="fillcol1()">
+      &#8595;
+    </div>
 
-  <div id="b1" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="b2" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="b3" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="b4" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="b5" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="b6" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="b7" (click)="fillcolor()" class="defaultclass"></div>
+    <div id="fillcol2" class="arrowdefaultclass" (click)="fillcol2()">
+      &#8595;
+    </div>
 
-  <div id="c1" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="c2" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="c3" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="c4" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="c5" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="c6" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="c7" (click)="fillcolor()" class="defaultclass"></div>
+    <div id="fillcol3" class="arrowdefaultclass" (click)="fillcol3()">
+      &#8595;
+    </div>
 
-  <div id="d1" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="d2" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="d3" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="d4" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="d5" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="d6" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="d7" (click)="fillcolor()" class="defaultclass"></div>
+    <div id="fillcol4" class="arrowdefaultclass" (click)="fillcol4()">
+      &#8595;
+    </div>
 
-  <div id="e1" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="e2" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="e3" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="e4" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="e5" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="e6" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="e7" (click)="fillcolor()" class="defaultclass"></div>
+    <div id="fillcol5" class="arrowdefaultclass" (click)="fillcol5()">
+      &#8595;
+    </div>
 
-  <div id="f1" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="f2" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="f3" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="f4" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="f5" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="f6" (click)="fillcolor()" class="defaultclass"></div>
-  <div id="f7" (click)="fillcolor()" class="defaultclass"></div>
+    <div id="fillcol6" class="arrowdefaultclass" (click)="fillcol6()">
+      &#8595;
+    </div>
+
+    <div id="fillcol7" class="arrowdefaultclass" (click)="fillcol7()">
+      &#8595;
+    </div>
+  </div>
+
+  <div id="a1" class="defaultclass"></div>
+  <div id="a2" class="defaultclass"></div>
+  <div id="a3" class="defaultclass"></div>
+  <div id="a4" class="defaultclass"></div>
+  <div id="a5" class="defaultclass"></div>
+  <div id="a6" class="defaultclass"></div>
+  <div id="a7" class="defaultclass"></div>
+
+  <div id="b1" class="defaultclass"></div>
+  <div id="b2" class="defaultclass"></div>
+  <div id="b3" class="defaultclass"></div>
+  <div id="b4" class="defaultclass"></div>
+  <div id="b5" class="defaultclass"></div>
+  <div id="b6" class="defaultclass"></div>
+  <div id="b7" class="defaultclass"></div>
+
+  <div id="c1" class="defaultclass"></div>
+  <div id="c2" class="defaultclass"></div>
+  <div id="c3" class="defaultclass"></div>
+  <div id="c4" class="defaultclass"></div>
+  <div id="c5" class="defaultclass"></div>
+  <div id="c6" class="defaultclass"></div>
+  <div id="c7" class="defaultclass"></div>
+
+  <div id="d1" class="defaultclass"></div>
+  <div id="d2" class="defaultclass"></div>
+  <div id="d3" class="defaultclass"></div>
+  <div id="d4" class="defaultclass"></div>
+  <div id="d5" class="defaultclass"></div>
+  <div id="d6" class="defaultclass"></div>
+  <div id="d7" class="defaultclass"></div>
+
+  <div id="e1" class="defaultclass"></div>
+  <div id="e2" class="defaultclass"></div>
+  <div id="e3" class="defaultclass"></div>
+  <div id="e4" class="defaultclass"></div>
+  <div id="e5" class="defaultclass"></div>
+  <div id="e6" class="defaultclass"></div>
+  <div id="e7" class="defaultclass"></div>
+
+  <div id="f1" class="defaultclass"></div>
+  <div id="f2" class="defaultclass"></div>
+  <div id="f3" class="defaultclass"></div>
+  <div id="f4" class="defaultclass"></div>
+  <div id="f5" class="defaultclass"></div>
+  <div id="f6" class="defaultclass"></div>
+  <div id="f7" class="defaultclass"></div>
 </div>

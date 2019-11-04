@@ -9,44 +9,771 @@ export class BoardComponent implements OnInit {
   constructor() {}
   ngOnInit() {}
 
-  fillcolor1() {
+  public turn: number = 1;
+
+  fillcol1() {
+    var container = document.getElementById("arrowcontainer");
+    var currentClasscontainer = container.className;
+
     var a1 = document.getElementById("a1");
-    var currentClass = a1.className;
-    a1.className = currentClass == "defaultclass" ? "redclass" : "blueclass";
+    var currentClassa1 = a1.className;
+    var b1 = document.getElementById("b1");
+    var currentClassb1 = b1.className;
+    var c1 = document.getElementById("c1");
+    var currentClassc1 = c1.className;
+    var d1 = document.getElementById("d1");
+    var currentClassd1 = d1.className;
+    var e1 = document.getElementById("e1");
+    var currentClasse1 = e1.className;
+    var f1 = document.getElementById("f1");
+    var currentClassf1 = f1.className;
+
+    if (
+      currentClassa1 == "defaultclass" &&
+      currentClassb1 == "defaultclass" &&
+      currentClassc1 == "defaultclass" &&
+      currentClassd1 == "defaultclass" &&
+      currentClasse1 == "defaultclass" &&
+      currentClassf1 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        f1.className = currentClassf1 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+        this.turn = this.turn + 1;
+      } else {
+        f1.className = currentClassf1 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa1 == "defaultclass" &&
+      currentClassb1 == "defaultclass" &&
+      currentClassc1 == "defaultclass" &&
+      currentClassd1 == "defaultclass" &&
+      currentClasse1 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        e1.className = currentClasse1 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+        this.turn = this.turn + 1;
+      } else {
+        e1.className = currentClasse1 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa1 == "defaultclass" &&
+      currentClassb1 == "defaultclass" &&
+      currentClassc1 == "defaultclass" &&
+      currentClassd1 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        d1.className = currentClassd1 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+        this.turn = this.turn + 1;
+      } else {
+        d1.className = currentClassd1 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa1 == "defaultclass" &&
+      currentClassb1 == "defaultclass" &&
+      currentClassc1 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        c1.className = currentClassc1 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+        this.turn = this.turn + 1;
+      } else {
+        c1.className = currentClassc1 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa1 == "defaultclass" &&
+      currentClassb1 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        b1.className = currentClassb1 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+        this.turn = this.turn + 1;
+      } else {
+        b1.className = currentClassb1 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (currentClassa1 == "defaultclass") {
+      if (this.turn == 1) {
+        a1.className = currentClassa1 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+        this.turn = this.turn + 1;
+      } else {
+        a1.className = currentClassa1 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    }
   }
-  fillcolor2() {
+
+  fillcol2() {
+    var container = document.getElementById("arrowcontainer");
+    var currentClasscontainer = container.className;
+
     var a2 = document.getElementById("a2");
-    var currentClass = a2.className;
-    a2.className = currentClass == "defaultclass" ? "redclass" : "blueclass";
+    var currentClassa2 = a2.className;
+    var b2 = document.getElementById("b2");
+    var currentClassb2 = b2.className;
+    var c2 = document.getElementById("c2");
+    var currentClassc2 = c2.className;
+    var d2 = document.getElementById("d2");
+    var currentClassd2 = d2.className;
+    var e2 = document.getElementById("e2");
+    var currentClasse2 = e2.className;
+    var f2 = document.getElementById("f2");
+    var currentClassf2 = f2.className;
+
+    if (
+      currentClassa2 == "defaultclass" &&
+      currentClassb2 == "defaultclass" &&
+      currentClassc2 == "defaultclass" &&
+      currentClassd2 == "defaultclass" &&
+      currentClasse2 == "defaultclass" &&
+      currentClassf2 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        f2.className = currentClassf2 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+        this.turn = this.turn + 1;
+      } else {
+        f2.className = currentClassf2 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa2 == "defaultclass" &&
+      currentClassb2 == "defaultclass" &&
+      currentClassc2 == "defaultclass" &&
+      currentClassd2 == "defaultclass" &&
+      currentClasse2 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        e2.className = currentClasse2 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        e2.className = currentClasse2 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa2 == "defaultclass" &&
+      currentClassb2 == "defaultclass" &&
+      currentClassc2 == "defaultclass" &&
+      currentClassd2 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        d2.className = currentClassd2 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        d2.className = currentClassd2 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa2 == "defaultclass" &&
+      currentClassb2 == "defaultclass" &&
+      currentClassc2 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        c2.className = currentClassc2 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        c2.className = currentClassc2 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa2 == "defaultclass" &&
+      currentClassb2 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        b2.className = currentClassb2 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        b2.className = currentClassb2 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (currentClassa2 == "defaultclass") {
+      if (this.turn == 1) {
+        a2.className = currentClassa2 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        a2.className = currentClassa2 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    }
   }
-  fillcolor3() {
-    var a1 = document.getElementById("a1");
-    var currentClass = a1.className;
-    a1.className = currentClass == "defaultclass" ? "redclass" : "blueclass";
+
+  fillcol3() {
+    var container = document.getElementById("arrowcontainer");
+    var currentClasscontainer = container.className;
+
+    var a3 = document.getElementById("a3");
+    var currentClassa3 = a3.className;
+    var b3 = document.getElementById("b3");
+    var currentClassb3 = b3.className;
+    var c3 = document.getElementById("c3");
+    var currentClassc3 = c3.className;
+    var d3 = document.getElementById("d3");
+    var currentClassd3 = d3.className;
+    var e3 = document.getElementById("e3");
+    var currentClasse3 = e3.className;
+    var f3 = document.getElementById("f3");
+    var currentClassf3 = f3.className;
+
+    if (
+      currentClassa3 == "defaultclass" &&
+      currentClassb3 == "defaultclass" &&
+      currentClassc3 == "defaultclass" &&
+      currentClassd3 == "defaultclass" &&
+      currentClasse3 == "defaultclass" &&
+      currentClassf3 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        f3.className = currentClassf3 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        f3.className = currentClassf3 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa3 == "defaultclass" &&
+      currentClassb3 == "defaultclass" &&
+      currentClassc3 == "defaultclass" &&
+      currentClassd3 == "defaultclass" &&
+      currentClasse3 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        e3.className = currentClasse3 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        e3.className = currentClasse3 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa3 == "defaultclass" &&
+      currentClassb3 == "defaultclass" &&
+      currentClassc3 == "defaultclass" &&
+      currentClassd3 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        d3.className = currentClassd3 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        d3.className = currentClassd3 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa3 == "defaultclass" &&
+      currentClassb3 == "defaultclass" &&
+      currentClassc3 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        c3.className = currentClassc3 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        c3.className = currentClassc3 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa3 == "defaultclass" &&
+      currentClassb3 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        b3.className = currentClassb3 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        b3.className = currentClassb3 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (currentClassa3 == "defaultclass") {
+      if (this.turn == 1) {
+        a3.className = currentClassa3 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        a3.className = currentClassa3 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    }
   }
-  fillcolor4() {
-    var a1 = document.getElementById("a1");
-    var currentClass = a1.className;
-    a1.className = currentClass == "defaultclass" ? "redclass" : "blueclass";
+  fillcol4() {
+    var container = document.getElementById("arrowcontainer");
+    var currentClasscontainer = container.className;
+
+    var a4 = document.getElementById("a4");
+    var currentClassa4 = a4.className;
+    var b4 = document.getElementById("b4");
+    var currentClassb4 = b4.className;
+    var c4 = document.getElementById("c4");
+    var currentClassc4 = c4.className;
+    var d4 = document.getElementById("d4");
+    var currentClassd4 = d4.className;
+    var e4 = document.getElementById("e4");
+    var currentClasse4 = e4.className;
+    var f4 = document.getElementById("f4");
+    var currentClassf4 = f4.className;
+
+    if (
+      currentClassa4 == "defaultclass" &&
+      currentClassb4 == "defaultclass" &&
+      currentClassc4 == "defaultclass" &&
+      currentClassd4 == "defaultclass" &&
+      currentClasse4 == "defaultclass" &&
+      currentClassf4 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        f4.className = currentClassf4 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        f4.className = currentClassf4 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa4 == "defaultclass" &&
+      currentClassb4 == "defaultclass" &&
+      currentClassc4 == "defaultclass" &&
+      currentClassd4 == "defaultclass" &&
+      currentClasse4 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        e4.className = currentClasse4 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        e4.className = currentClasse4 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa4 == "defaultclass" &&
+      currentClassb4 == "defaultclass" &&
+      currentClassc4 == "defaultclass" &&
+      currentClassd4 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        d4.className = currentClassd4 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        d4.className = currentClassd4 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa4 == "defaultclass" &&
+      currentClassb4 == "defaultclass" &&
+      currentClassc4 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        c4.className = currentClassc4 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        c4.className = currentClassc4 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa4 == "defaultclass" &&
+      currentClassb4 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        b4.className = currentClassb4 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        b4.className = currentClassb4 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (currentClassa4 == "defaultclass") {
+      if (this.turn == 1) {
+        a4.className = currentClassa4 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        a4.className = currentClassa4 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    }
   }
-  fillcolor5() {
-    var a1 = document.getElementById("a1");
-    var currentClass = a1.className;
-    a1.className = currentClass == "defaultclass" ? "redclass" : "blueclass";
+  fillcol5() {
+    var container = document.getElementById("arrowcontainer");
+    var currentClasscontainer = container.className;
+
+    var a5 = document.getElementById("a5");
+    var currentClassa5 = a5.className;
+    var b5 = document.getElementById("b5");
+    var currentClassb5 = b5.className;
+    var c5 = document.getElementById("c5");
+    var currentClassc5 = c5.className;
+    var d5 = document.getElementById("d5");
+    var currentClassd5 = d5.className;
+    var e5 = document.getElementById("e5");
+    var currentClasse5 = e5.className;
+    var f5 = document.getElementById("f5");
+    var currentClassf5 = f5.className;
+
+    if (
+      currentClassa5 == "defaultclass" &&
+      currentClassb5 == "defaultclass" &&
+      currentClassc5 == "defaultclass" &&
+      currentClassd5 == "defaultclass" &&
+      currentClasse5 == "defaultclass" &&
+      currentClassf5 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        f5.className = currentClassf5 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        f5.className = currentClassf5 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa5 == "defaultclass" &&
+      currentClassb5 == "defaultclass" &&
+      currentClassc5 == "defaultclass" &&
+      currentClassd5 == "defaultclass" &&
+      currentClasse5 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        e5.className = currentClasse5 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        e5.className = currentClasse5 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa5 == "defaultclass" &&
+      currentClassb5 == "defaultclass" &&
+      currentClassc5 == "defaultclass" &&
+      currentClassd5 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        d5.className = currentClassd5 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        d5.className = currentClassd5 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa5 == "defaultclass" &&
+      currentClassb5 == "defaultclass" &&
+      currentClassc5 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        c5.className = currentClassc5 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        c5.className = currentClassc5 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa5 == "defaultclass" &&
+      currentClassb5 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        b5.className = currentClassb5 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        b5.className = currentClassb5 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (currentClassa5 == "defaultclass") {
+      if (this.turn == 1) {
+        a5.className = currentClassa5 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        a5.className = currentClassa5 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    }
   }
-  fillcolor6() {
-    var a1 = document.getElementById("a1");
-    var currentClass = a1.className;
-    a1.className = currentClass == "defaultclass" ? "redclass" : "blueclass";
+  fillcol6() {
+    var container = document.getElementById("arrowcontainer");
+    var currentClasscontainer = container.className;
+
+    var a6 = document.getElementById("a6");
+    var currentClassa6 = a6.className;
+    var b6 = document.getElementById("b6");
+    var currentClassb6 = b6.className;
+    var c6 = document.getElementById("c6");
+    var currentClassc6 = c6.className;
+    var d6 = document.getElementById("d6");
+    var currentClassd6 = d6.className;
+    var e6 = document.getElementById("e6");
+    var currentClasse6 = e6.className;
+    var f6 = document.getElementById("f6");
+    var currentClassf6 = f6.className;
+
+    if (
+      currentClassa6 == "defaultclass" &&
+      currentClassb6 == "defaultclass" &&
+      currentClassc6 == "defaultclass" &&
+      currentClassd6 == "defaultclass" &&
+      currentClasse6 == "defaultclass" &&
+      currentClassf6 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        f6.className = currentClassf6 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        f6.className = currentClassf6 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa6 == "defaultclass" &&
+      currentClassb6 == "defaultclass" &&
+      currentClassc6 == "defaultclass" &&
+      currentClassd6 == "defaultclass" &&
+      currentClasse6 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        e6.className = currentClasse6 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        e6.className = currentClasse6 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa6 == "defaultclass" &&
+      currentClassb6 == "defaultclass" &&
+      currentClassc6 == "defaultclass" &&
+      currentClassd6 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        d6.className = currentClassd6 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        d6.className = currentClassd6 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa6 == "defaultclass" &&
+      currentClassb6 == "defaultclass" &&
+      currentClassc6 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        c6.className = currentClassc6 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        c6.className = currentClassc6 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa6 == "defaultclass" &&
+      currentClassb6 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        b6.className = currentClassb6 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        b6.className = currentClassb6 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (currentClassa6 == "defaultclass") {
+      if (this.turn == 1) {
+        a6.className = currentClassa6 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        a6.className = currentClassa6 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    }
   }
-  fillcolor7() {
-    var a1 = document.getElementById("a1");
-    var currentClass = a1.className;
-    a1.className = currentClass == "defaultclass" ? "redclass" : "blueclass";
-  }
-  fillcolorb1() {
-    var a1 = document.getElementById("a1");
-    var currentClass = a1.className;
-    a1.className = currentClass == "defaultclass" ? "redclass" : "blueclass";
+  fillcol7() {
+    var container = document.getElementById("arrowcontainer");
+    var currentClasscontainer = container.className;
+
+    var a7 = document.getElementById("a7");
+    var currentClassa7 = a7.className;
+    var b7 = document.getElementById("b7");
+    var currentClassb7 = b7.className;
+    var c7 = document.getElementById("c7");
+    var currentClassc7 = c7.className;
+    var d7 = document.getElementById("d7");
+    var currentClassd7 = d7.className;
+    var e7 = document.getElementById("e7");
+    var currentClasse7 = e7.className;
+    var f7 = document.getElementById("f7");
+    var currentClassf7 = f7.className;
+
+    if (
+      currentClassa7 == "defaultclass" &&
+      currentClassb7 == "defaultclass" &&
+      currentClassc7 == "defaultclass" &&
+      currentClassd7 == "defaultclass" &&
+      currentClasse7 == "defaultclass" &&
+      currentClassf7 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        f7.className = currentClassf7 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        f7.className = currentClassf7 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa7 == "defaultclass" &&
+      currentClassb7 == "defaultclass" &&
+      currentClassc7 == "defaultclass" &&
+      currentClassd7 == "defaultclass" &&
+      currentClasse7 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        e7.className = currentClasse7 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        e7.className = currentClasse7 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa7 == "defaultclass" &&
+      currentClassb7 == "defaultclass" &&
+      currentClassc7 == "defaultclass" &&
+      currentClassd7 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        d7.className = currentClassd7 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        d7.className = currentClassd7 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa7 == "defaultclass" &&
+      currentClassb7 == "defaultclass" &&
+      currentClassc7 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        c7.className = currentClassc7 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        c7.className = currentClassc7 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (
+      currentClassa7 == "defaultclass" &&
+      currentClassb7 == "defaultclass"
+    ) {
+      if (this.turn == 1) {
+        b7.className = currentClassb7 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        b7.className = currentClassb7 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    } else if (currentClassa7 == "defaultclass") {
+      if (this.turn == 1) {
+        a7.className = currentClassa7 = "redclass";
+        container.className = currentClasscontainer = "bluecontainer";
+
+        this.turn = this.turn + 1;
+      } else {
+        a7.className = currentClassa7 = "blueclass";
+        container.className = currentClasscontainer = "redcontainer";
+        this.turn = this.turn - 1;
+      }
+    }
   }
 }
